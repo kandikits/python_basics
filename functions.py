@@ -1,33 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@kandikits 
-PythonProgramming
-/
-Python-3-basics-series
-Public
-Code
-Issues
-Pull requests
-2
-Actions
-Projects
-Wiki
-Security
-Insights
-Python-3-basics-series/10. basic Functions intro.py /
-@Sentdex
-Sentdex init commit
-Latest commit 49da4c6 on Mar 26, 2015
- History
- 1 contributor
-40 lines (30 sloc)  1.52 KB
-
-
 '''
 Hello everyone and welcome to another python 3 basics video. In this video we
 will be discussing the basics of a function.
