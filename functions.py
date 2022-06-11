@@ -1,6 +1,5 @@
 '''
-Hello everyone and welcome to another python 3 basics video. In this video we
-will be discussing the basics of a function.
+Hello everyone and welcome. We will be discussing the basics of a function.
 The idea of a function is to assign a set of code, and possibly variables,
 known as parameters, to a single bit of text. You can think of it a lot like
 why you choose to write and save a program, rather than writing out the
