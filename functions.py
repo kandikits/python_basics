@@ -1,60 +1,68 @@
-#!/usr/bin/python
-
-maxCalled = 0
-minCalled = 0
-
-
-
-
-def max_val(a,b):
-  '''Returns the maximum of the specified arguments.
-
-  Arguments must be numbers'''
-  
-  global maxCalled
-  maxCalled = maxCalled + 1
-  
-  if(a > b):
-    return a
-  elif(b > a):
-    return b
-  else:
-    return a
-
-def min_val(a,b):
-  '''Returns the minimum of the specified arguments.
-
-  Arguments must be numbers'''
-  
-  global minCalled 
-  minCalled = minCalled + 1
-  
-  if(a < b):
-    return a
-  elif(b < a):
-    return b
-  else:
-    return a 
-
-def print_usage(init_msg, max_val=True, min_val=True):
-  global maxCalled, minCalled
-  print (init_msg)
-  if max_val:
-    print ('functin max_val was called', maxCalled, ' times')
-  if min_val:
-    print ('function min_val was called', minCalled, ' times')
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@kandikits 
+PythonProgramming
+/
+Python-3-basics-series
+Public
+Code
+Issues
+Pull requests
+2
+Actions
+Projects
+Wiki
+Security
+Insights
+Python-3-basics-series/10. basic Functions intro.py /
+@Sentdex
+Sentdex init commit
+Latest commit 49da4c6 on Mar 26, 2015
+ History
+ 1 contributor
+40 lines (30 sloc)  1.52 KB
 
 
-print ('Calling function max_val')
-print (max_val.__doc__)
-max_val(1,4)
-max_val(2,b=1)
-max_val(b=4,a=3)
+'''
+Hello everyone and welcome to another python 3 basics video. In this video we
+will be discussing the basics of a function.
+The idea of a function is to assign a set of code, and possibly variables,
+known as parameters, to a single bit of text. You can think of it a lot like
+why you choose to write and save a program, rather than writing out the
+entire program every time you want to execute it.
+'''
 
-print ('Calling function min_val')
-print (min_val.__doc__)
-min_val(1,4)
-min_val(2,4)
-min_val(4,b=9)
+# To begin a function, the keyword 'def' is used to notify
+# python of the impending function definition, which is what def
+# stands for.
 
-print_usage('The usage of functions min_val and max_val')
+# from there, you type out the name you want to call your function.
+# it is important to choose a unique name, and also one that wont conflict
+# with any other functions you might be using. For example, you wouldn't
+# want to go calling your function print. 
+
+
+# so here we've called our function example. After the name of the function,
+# you specify any parameters of that function within the parenthesis
+# parameters act as variables within the function, they are not necessary
+# to create a function, so first let's just do this without any parameters. 
+
+def example():
+    # functions just run whatever code is encased with them.
+    print('this code will run')
+    z = 3 + 9
+    print(z)
+
+# now if we just run this, we see nothing happens. We have to actually call
+# this function to execute, because all we've done so far is just define the
+# function and what it does. To run it, you can either type out the function in
+# the console like so:
+
+# or you can add it to the actual script itself:
+
+example()
