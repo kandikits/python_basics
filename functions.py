@@ -23,7 +23,7 @@ entire program every time you want to execute it.
 
 def example():
     # functions just run whatever code is encased with them.
-    print('this code will run')
+    print('this code will run. Get into the function.py file for editing it')
     z = 3 + 9
     print(z)
 
